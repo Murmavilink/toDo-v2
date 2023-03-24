@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="shortcut icon" type="image/png" href="list.png" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>To-do List</title>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__title" href="index.html">
+          <i class="fas fa-clipboard-check"></i> To-do List
+        </a>
+
+        <form class="form" id="form">
+          <input class="form__input" id="input" type="text" placeholder="I need to...">
+          <button class="form__btn" id="add-item" type="submit">Добавить</button>
+        </form>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <ul id="todo-list"></ul>
+
+      <button id="btn-clear" class="btn-clear">Очистить</button>
+    </div>
+  </main>
+
+</body>
+</html>

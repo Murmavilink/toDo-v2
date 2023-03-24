@@ -1,0 +1,207 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Fredoka One', cursive;
+  background-image: linear-gradient(to right, #E22865, #37ADCD);
+  color: #fff;
+}
+
+.container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 70px;
+}
+
+.header__title {
+  white-space: nowrap;
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.form {
+  display: flex;
+  margin-top: 2px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.form__input {
+  width: 100%;
+  outline: none;
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.form__input:focus{
+  box-shadow: 0 0 5px #E22865;
+  border: 1px solid #E22865;
+}
+
+.form__btn {
+  cursor: pointer;
+  padding: 8px;
+  width: fit-content;
+  color: black;
+  transition: .3s;
+  outline: none;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.form__btn:hover{
+  background-color: transparent;
+  color: white;
+}
+
+#todo-list {
+  max-width: 500px;
+  margin: auto;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  padding: 1rem;
+  color: #454545;
+  margin-top:10px;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid lightgray;
+  text-transform: uppercase;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  transition: all 0.30s ease-in-out;
+}
+
+.item:hover{
+  box-shadow: 0 0 20px #E22865;
+  border: 1px solid #E22865;
+}
+
+.item i{
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.item__controller {
+  width: 100%;
+}
+
+.item__controller-wrap {
+  width: 100%;
+  display: flex;
+}
+
+.item__controller-wrap textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 26px;
+  line-height: 26px;
+  font-family: inherit;
+  transition: all 0.30s ease-in-out;
+}
+
+.item__edit-controller {
+  flex-shrink: 0;
+}
+
+.item__update-controller {
+  padding-top: 10px;
+}
+
+.saveBtn, 
+.cancelBtn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #C9D1C8;
+  cursor: pointer;
+}
+
+.saveBtn:hover, 
+.cancelBtn:hover {
+  color: #fff;
+  transition: color .3s;
+} 
+
+.btn-clear {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+.btn-clear:hover{
+  color: #ffffff;
+  background-color: #454545;
+}
+
+.fa-check-square, .fa-pen-to-square {
+  color: lightgray;
+  transition: color .3s;
+}
+
+.fa-trash {
+  color: darkgray;
+  transition: color .3s;
+}
+
+.fa-check-square:hover {
+  color: limegreen;
+}
+
+.fa-pen-to-square:hover {
+  color: rgb(0, 84, 0);
+}
+
+.fa-trash:hover {
+  color: red;
+}
+
+@media(max-width: 620px){
+  
+  .header__inner {
+    justify-content: space-around;
+  }
+
+  .header__title {
+    margin: 20px 0 20px;
+  }
+
+}
