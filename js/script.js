@@ -48,8 +48,8 @@ const render = () => {
                     </div>
                 </div>
                     <div class="item__update-controller" style="display: none;">
-                        <button class="saveBtn">Save</button>
-                        <button class="cancelBtn">Cancel</button>
+                        <button class="saveBtn">Сохранить</button>
+                        <button class="cancelBtn">Отмена</button>
                     </div>
                 </div>
             `);
